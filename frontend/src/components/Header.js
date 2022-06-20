@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Flex, Box, Link, Heading, Button, Icon } from "@chakra-ui/react"
 import { Link as RouterLink} from 'react-router-dom'
-import {HiOutlineMenuAlt3, HiShoppingBag, HiUser } from 'react-icons/hi';
+import {HiOutlineMenuAlt3, HiUser } from 'react-icons/hi';
+import { MdFoodBank} from 'react-icons/md'
 
 const MenuItems = ({ children, url }) => {
     return (
@@ -49,7 +50,7 @@ const Header = () => {
                 display={{ base:'block', md:'none', sm:'block' }} 
                 onClick={() => setShow(!show)}>
                 <Icon as={HiOutlineMenuAlt3} color="white" w="6" h="6"/>
-                <title>Menu</title>
+                    <title>Menu</title>
                 </Box>
                 <Box
                 display={{ base: show ? 'block' : 'none', md:'flex'}}
@@ -64,7 +65,7 @@ const Header = () => {
                 </MenuItems>
                 <MenuItems url="/">
                     <Flex alignItems="center">
-                    <Icon as={HiShoppingBag} w="4" h="4" mr="1"/>
+                    <Icon as={MdFoodBank} w="4" h="4" mr="1"/>
                         Orders
                     </Flex>
                 </MenuItems>
