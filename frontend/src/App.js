@@ -1,12 +1,12 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import foodList from "./data/foodList";
+import HomeScreen from "./screens/HomeScreen";
 
 const App = () => {
   return (
     <>
       <Header/>
-      
+      <HomeScreen/>
       <Footer/>
     </>
   )
